@@ -18,7 +18,7 @@ def topics(request):
 
 
     return render(request, 'MainApp/topics.html', context)
- @login_required   
+@login_required   
 def topic(request, topic_id):
     topic = Topic.objects.get(id=topic_id)
 
